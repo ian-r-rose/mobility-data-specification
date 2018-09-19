@@ -176,7 +176,7 @@ Data: `{ "status_changes": [] }`, an array of objects with the following structu
 | `event_type` | Enum | Required | See [event types](#event-types) table |
 | `event_type_reason` | Enum | Required | Reason for status change, allowable values determined by [`event type`](#event-types) |
 | `event_time` | Unix Timestamp | Required | Date/time that event occurred, based on device clock |
-| `event_location` | Point | Required | |
+| `event_location` | GeoJSON Point | Required | |
 | `battery_pct` | Float | Required if Applicable | Percent battery charge of device, expressed between 0 and 1 |
 | `associated_trips` | UUID[] | Optional based on device | For "Reserved" event types, associated trips (foreign key to Trips API) |
 
